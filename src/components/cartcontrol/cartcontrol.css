@@ -1,0 +1,32 @@
+.cartcontrol{
+    float: right;
+}
+.cart-decrease{
+    display: inline-block;
+}
+.cart-count{
+    display: inline-block;
+    
+}
+.cart-icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border:1px solid #00A0DC;
+    text-align: center;
+    line-height: 19px;
+    color: #00A0DC;
+}
+.cart-jian:before{
+    content: '-';
+    font-size: 20px;
+}
+.cart-icon.cart-add{
+    background: #00A0DC;
+    color: #fff;
+}
+.cart-add:before{
+    content: '+';
+    font-size: 20px;
+}

@@ -1,0 +1,87 @@
+.shopCart{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #141D27;
+    height: 48px;
+}
+.shopCart .content{
+    display: flex;
+    color: rgba(255,255,255,0.4);
+}
+.shopCart .content .content-left{
+    flex: 1;
+    -webkit-flex:1
+}
+.shopCart .content .content-right{
+    width: 105px;
+}
+.shopCart .content .content-left .loger-wraper{
+    position: relative;
+    background: #141D27;
+    top:-11px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    text-align: center;
+    left:15px;
+    display: inline-block;
+}
+.shopCart .content .content-left .logo{
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background: #00a0dc;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    margin-top: 5px;
+    position: relative;
+}
+.shopCart .content .content-left .logo .logo-icon{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border:1px solid #ddd;
+    
+}
+.shopCart .content .content-left .num{
+    position: absolute;
+    background: #f00;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 8px;
+    right: -3px;
+    top:3px;
+}   
+.shopCart .content .content-left .price{
+    display: inline-block;
+    font-weight: 700;
+    color: #fff;
+    font-size: 16px;
+    vertical-align: text-top;
+    margin-left: 22px;
+}
+.shopCart .content .content-left .desc{
+    display: inline-block;
+    font-size: 12px;
+    vertical-align:top;
+    margin: 12px 0 0 12px;
+    border-left: 1px solid rgba(255,255,255,0.4);
+    line-height: 24px;
+    padding-left: 10px;
+}
+.content-right .pay{
+    font-size: 12px;
+    display: inline-block;
+    height: 100%;
+    line-height: 49px;
+    background: #2b333b;
+    width: 100%;
+    text-align: center;
+}
+.content-right .pay.check{
+    background: #00a0dc;
+    color: #fff;
+}
