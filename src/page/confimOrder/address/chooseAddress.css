@@ -1,0 +1,51 @@
+.address-box{
+    background: #fff;
+}
+.address-item{
+    border-bottom: 1px solid #eee;
+    padding: 17px 23px;
+}
+.address-item.checkItem .isChooseIcon{
+    background: #3190e8;
+    border-color: #3190e8;
+}
+.address-item a{
+    display: flex;
+    align-items: center;
+    line-height: 25px;
+    color: #333;
+}
+.address-item .isChooseIcon{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border:1px solid #ccc;
+    margin-right: 17px;
+}
+.address-item .info-tips{
+    font-size: 12px;
+    padding: 0px 9px;
+    line-height: inherit;
+    background: #ff5722;
+    color: #fff;
+    border-radius: 2px;
+}
+.address-item .info-top{
+    font-size: 17px;
+}
+.address-item .info-name{
+    font-weight: 700;
+    font-size: 19px;
+}
+.addAds{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 17px 0;
+    background: #fff;
+    font-size: 18px;
+}
+.addAds a{
+    color: #3190e8;
+}

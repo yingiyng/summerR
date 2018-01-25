@@ -1,0 +1,62 @@
+.addAddress{
+    padding: 0px 15px;
+    background: #fff;
+    
+}
+.addAddress_item{
+    display: flex;
+    align-items: center;
+    /* padding: 18px 0; */
+    border-bottom: 1px solid #f5f5f5;
+}
+.item_title{
+    font-size: 16px;
+    flex: 1;
+}
+.item_con{
+    flex: 4;
+    padding-left: 20px;
+}
+.addAddress_item input{
+    height: 55px;
+    line-height: 55px;
+    color: #999;
+    outline: none;
+    font-size: 16px;
+}
+.addAddress_item .chooseSex{
+    height: 55px;
+    line-height: 55px;
+    color: #999;
+    font-size: 16px;    
+}
+.addAddress_item .chooseSex span{
+    display: inline-block;
+    margin-right: 40px;
+}
+.addAddress_item .chooseSex span:before{
+    content: '';
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border:1px solid #ddd;
+    margin-right: 10px;
+}
+.addAddress_item .chooseSex span.checkSex:before{
+    background: #3190e8;
+    border-color: #3190e8;
+}
+.addAddress_item .child_item:first-child{
+    border-bottom: 1px solid #f5f5f5;
+}
+.addAddressBtn{
+    width: 86%;
+    margin: 0 auto;
+    background: #4cd964;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-top: 10px;
+}

@@ -10,11 +10,11 @@
               <div v-show="isEnvelopes">
                <div class="box-list-top">
                     <span>有 <span>{{envelopes_list.length}}</span> 个即将到期的红包</span>
-                    <router-link to=""  class="hbTips">红包说明</router-link>
+                    <router-link to="/profile/benefit/hbInfo"  class="hbTips">红包说明</router-link>
               </div>
                 <ul class="envelopes_list">
                     <li v-for="(item,index) in envelopes_list">
-                        <section class="list_section" v-if="!item.hbGuoqi">
+                        <section class="list_section">
                             <div class="list_section_left">
                                 <p class="list_price">
                                     <span>￥</span>
@@ -31,7 +31,7 @@
                                 <p>仅限手机号为{{item.onlyphone}}收货</p>
                             </div>
                         </section>
-                        <footer v-if="item.description_map.delat_other&&!item.hbGuoqi" class="delat_other">
+                        <footer v-if="item.description_map.delat_other" class="delat_other">
                             {{item.description_map.delat_other}}
                         </footer>
                     </li>
@@ -42,7 +42,7 @@
               </div>
               <div v-show="!isEnvelopes">
                 <div class="box-list-top">
-                    <router-link to=""  class="hbTips">商家代金券说明</router-link>
+                    <router-link to="/profile/benefit/sjInfo"  class="hbTips">商家代金券说明</router-link>
                 </div>
                 <div class="unable_use">
                     <h3>无法使用代金券</h3>
@@ -84,7 +84,7 @@ export default {
         getEnvelopesList(){
             var self=this;
             Jquery.ajax({ 
-            url: 'http://192.168.1.116:8080/js/data.json', 
+            url: 'http://192.168.1.124:8089/js/data.json', 
             type: 'GET', 
             dataType:"jsonp",    
             jsonp:"callback", 
@@ -95,7 +95,11 @@ export default {
             },    
             success:function(json,textStatus){    
                 console.log(json.envelopesList);
-                self.envelopes_list=json.envelopesList;
+                for(var i=0;i<json.envelopesList.length;i++){
+                    if(json.envelopesList[i].hbGuoqi==false){
+                        self.envelopes_list.push(json.envelopesList[i]);
+                    }
+                }                
             },    
             error:function(XMLHttpRequest,textStatus,errorThrown){    
                 console.log("jsonp.error:"+textStatus);    

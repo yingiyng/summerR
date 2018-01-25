@@ -1,0 +1,242 @@
+.food-sort{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.sort-item{
+    flex: 1;
+    text-align: center;
+    padding: 2px 0;
+}
+.sort-item:nth-child(2){
+    border-left:1px solid #ededed;
+    border-right:1px solid #ededed;
+}
+.sort-item .sort-check{
+    color: #3190e8;
+}
+.sort_detail_type{
+    width: 100%;
+    position: absolute;
+    top:45px;
+    display: flex;
+    background: #fff;
+    left:0;
+}
+.sort_nav_left{
+    flex: 1;
+    background: #f1f1f1;
+    height: 360px;
+    overflow: auto;
+}
+.sort_nav_left .sort_nav_li{
+    line-height: 40px;
+    color: #333;
+    font-size: 13px;
+    display: flex; 
+    align-items: center;
+    position: relative;
+}
+.sort_li_name{
+    padding-left: 10px;
+}
+.sort_li_num{
+    background: #ccc;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 40%;
+    line-height: normal;
+    float: right;
+    position: absolute;
+    right:20px;;
+}
+.sort_right{
+    flex: 1;
+    background: #fff;
+    padding-left: 16px;
+    font-size: 13px;
+    height: 360px;
+    overflow: auto;
+}
+.sort_right .sort_right_li{
+    line-height: 40px;
+    border-bottom: 1px solid #ededed;
+    position: relative;
+    text-align: left;
+}
+.sort_right .sort_right_number{
+    position: absolute;
+    right:20px;
+}
+.sort_nav_li_check{
+    background: #fff;
+}
+.tuijian_con{
+    width: 100%;
+}
+.tuijian_con li{
+    border-bottom: 1px solid #e4e4e4;
+    line-height:50px;
+    width: 89%;
+    margin-left: 11%;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    padding-left: 10px;
+}
+.tuijian_con li.checkTuijian{
+    color: #3190e8;
+}
+.shaixuan_con{
+    padding: 15px 20px;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    padding-bottom: 60px;
+}
+.shaixuan_con header{
+    font-size: 13px;
+}
+.filter_ul{
+    display: flex;
+    flex-wrap:wrap;
+    padding: 10px 0;
+}
+.filter_ul li{
+    border: 1px solid #ededed;
+    padding: 11px 0 11px 4%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-right: 2%;
+    font-size: 13px;
+    width: 26%;
+}
+.sort_footer_cancel{
+    background: #f1f1f1;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;    
+    padding: 5px 0;
+}
+.sort_footer_cancel p{
+    display: inline-block;
+    margin: 0 1.5%;
+    line-height: 45px;
+    border:1px solid #ddd;
+    border-radius: 4px;
+    width: 46.5%;
+    text-align: center;
+    background: #fff;
+    font-size: 18px;
+}
+.sort_footer_cancel p:last-child{
+    margin-left: 0;
+}
+.sort_footer_cancel p.comfimBtn{
+    border-color: #56d176;
+    background: #56d176;
+    color: #fff;
+}
+.filter_ul .checkSort{
+    color: #3190e8;
+    border-color: #3190e8;
+}
+.food-list ul{
+    background: #fff;
+}
+.item-con{
+    padding-left: 20px; 
+    flex: 1;
+}
+.food-item{
+    display: flex;
+    align-items: center;
+    padding: 17px 0;
+    border-bottom: 1px solid #ededed;
+}
+.food-item .shopImg{
+    width: 80px;
+    height: 80px;
+}
+.food-list .shoplist_container{
+    margin-top: 0;
+}
+.shop_right .shop_header{
+    padding: 3px 0 3px 10px;
+}
+
+.shop-item-header{
+    display: flex;
+    align-items: center;
+}
+.shop-item-header .header-tips{
+    font-size: 14px;
+    font-weight: bold;
+    background: #FFD930;
+    padding: 1px 7px;
+}
+.shop-item-header .header-name b{
+    font-size: 17px;
+    font-weight: bold;
+}
+.header-right{
+    text-align: right;
+    flex: 1;
+    font-size: 12px;
+    color: #999;
+}
+.rating-order-num{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 13px 0;
+}
+.scoreNum{
+    font-size: 13px;
+    color: #ff6000;
+    margin: 0 10px;
+}
+.maiNum{
+    font-size: 13px;
+    color: #999;
+}
+.rating-order-right{
+    flex: 1;
+    text-align: right;
+}
+.rating-order-right span{
+    display: inline-block;
+    border-radius: 2px;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+.rating-order-right span:first-child{
+    color: #fff;
+    background: #3190e8;
+}
+.rating-order-right span:last-child{
+    color: #3190e8;
+    border:1px solid #3190e8;
+}
+.fee-distance{
+    display: flex;
+    align-items: center;
+}
+.fee-distance .fee-left{
+    font-size: 12px;
+}
+.fee-distance .fee-right{
+    flex: 1;
+    text-align: right;
+    font-size: 12px;
+}
+.fee-right-km{
+    color: #999;
+}
+.fee-distance .fee-right span:last-child{
+    color: #3190e8;
+}

@@ -1,16 +1,16 @@
 <template>
     <div class="foot_guide">
         <section class="guide_item">
-            <router-link to="/goods">商品</router-link>
+            <router-link to="/msite">商品</router-link>
         </section>
         <section class="guide_item">
-            <router-link to="">搜索</router-link>
+            <router-link to="/search">搜索</router-link>
         </section>
         <section class="guide_item">
-            <router-link to="">订单</router-link>            
+            <router-link to="/order">订单</router-link>            
         </section>
         <section class="guide_item">
-            <router-link to="">我的</router-link>            
+            <router-link to="/profile">我的</router-link>            
         </section>
     </div>
 </template>

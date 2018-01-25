@@ -5,7 +5,7 @@
               <div>
                 <ul class="envelopes_list">
                     <li v-for="(item,index) in hbHistoryList">
-                        <section class="list_section" v-if="item.hbGuoqi">
+                        <section class="list_section">
                             <div class="list_section_left">
                                 <p class="list_price">
                                     <span>￥</span>
@@ -53,7 +53,7 @@ export default {
       gethbHistory(){
           var self=this;
             Jquery.ajax({ 
-                url: 'http://192.168.1.116:8080/js/data.json', 
+                url: 'http://192.168.1.124:8089/js/data.json', 
                 type: 'GET', 
                 dataType:"jsonp",    
                 jsonp:"callback", 
@@ -64,7 +64,11 @@ export default {
                 },    
                 success:function(json,textStatus){    
                     console.log(json.envelopesList);
-                    self.hbHistoryList=json.envelopesList;
+                    for(var i=0;i<json.envelopesList.length;i++){
+                        if(json.envelopesList[i].hbGuoqi){
+                            self.hbHistoryList.push(json.envelopesList[i]);
+                        }
+                    }
                 },    
                 error:function(XMLHttpRequest,textStatus,errorThrown){    
                     console.log("jsonp.error:"+textStatus);    

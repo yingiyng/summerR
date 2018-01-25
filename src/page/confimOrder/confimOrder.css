@@ -1,0 +1,217 @@
+.order-header{
+    background: #fff;
+}
+.order-header .order-address{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding:20px  0;     
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAGCAYAAACMyr1NAAAAAXNSR0IArs4c6QAAANxJREFUOBFjZICCpoUPWhn+M7rD+OTQjP8ZztQmymfg0/tr95JlDAz/I/GpISTHyMiwj9Ul1hmbOiaQYNfSx6qUegZkDisD01QQjQv837NMD+iYCFzyxIr/Z2asxqWWBSTx49e/LAZGXEqIFP/PcLgiUfYyPtV/GP62/P9PmU3AANnM6hhzApc9TB3zH+sCrbDFpYBYcQ42pmn41P7av8QC6BlffGoIyTEyMv5nYWCuwaeO6TfDv2x8CoiSY/y/syxa9jY+tYx//7fikydGDhggKxhdoi4Ro3bYqAEAknE5DXYMR0IAAAAASUVORK5CYII=) 0 100% repeat-x;    
+    background-size: 8%;
+}
+.order-header .order-address-left{
+    flex: 1;
+    color: #333;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 15px;
+}
+.order-address-left .person-name{
+    font-weight: 700;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.order-address-left .address-tips{
+    display: inline-block;
+    padding: 1px 6px;
+    background: rgb(76, 217, 100);
+    color: #fff;
+    font-size: 13px;
+    line-height: normal;
+    border-radius: 3px;
+}
+.order-header .order-address-right{
+    text-align: right;
+    padding-right: 10px;
+}
+.order-songTime{
+    margin-top: 10px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+.order-songTime .order-songTime-left{
+    flex: 1;
+    text-align: center;
+    border-left: 4px solid #3190e8;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 36px 0;
+}
+.order-songTime .order-songTime-right{
+    flex: 2;
+    text-align: right;
+    padding-right: 15px;
+    line-height: 29px;
+    color: #3190e8;
+    font-size: 18px;
+}
+.order-songTime .order-songTime-right .song-tips{
+    display: inline-block;
+    background: #3190e8;
+    color: #fff;
+    font-size: 14px;
+    padding: 2px 5px;
+    line-height: normal;
+    border-radius: 3px;
+}
+.order-pay{
+    background: #fff;
+    padding: 0 15px;
+    margin-top: 10px;
+}
+.order-pay li{
+    padding: 19px 4px;
+}
+.order-pay li a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.order-pay li:nth-child(1){
+    border-bottom:1px solid #ededed;
+}
+.order-pay li span{
+    flex: 1;
+    text-align: right;
+    color: #999;
+}
+.food-list{
+    margin-top: 10px;
+    background: #fff;
+}
+.food-list .food-header{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 19px;
+    border-bottom:1px solid #ededed;
+}
+.food-list .shangjia-img{
+    width: 40px;
+    height: 40px;
+    margin-right: 9px;
+}
+.food-item{
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    color: #666;
+}
+.food-item .food-name{
+    padding-left: 20px;
+}
+.food-num-price{
+    flex: 1;
+    text-align: right;
+    padding-right: 26px;
+}
+.food-num-price .food-number{
+    display: inline-block;
+    margin-right: 20px;
+    color: #f60
+}
+.order-pay{
+    border-top:1px solid #ededed;
+}
+.order-pay .food-num-price{
+    color: #f60;
+}
+.food-countPrice{
+    display: inline-block;
+    margin-left: 12px;
+}
+.order-footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #3c3c3c;
+    color: #fff;
+    font-size: 19px;
+    height: 55px;
+    line-height: 55px;
+}
+.order-footer .waitingPay{
+    display: inline-block;
+    padding-left: 20px;
+}
+.order-footer .comfimOrder{
+    float: right;
+    background: #56d176;
+    display: inline-block;
+    height: 55px;
+    line-height: 55px;
+    color: #fff;
+    padding: 0 18px;
+}
+.container_style{
+    margin-bottom: 90px;
+}
+
+.bgCover{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+.boxList{
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    background: #fff;
+    padding-top: 40px;
+}
+.boxList li{
+    line-height: 51px;
+    padding: 0 15px;
+}
+.boxList ul{
+    overflow: auto;
+    max-height: 204px;
+    padding: 10px 0;
+}
+.boxList .boxList-header{
+    text-align: right;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    background: #ededed;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.boxList .boxList-header span{
+    color: #3190e8;
+    padding-right: 10px;
+    display: inline-block;
+    position: absolute;
+    right:0;
+}
+.boxList .payType{
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #ccc;
+    float: right;
+    margin-top: 5%;
+}
+.boxList li.payChecked .payType{
+    border-color: #3190e8;
+    background: #3190e8;
+}

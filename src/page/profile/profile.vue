@@ -27,7 +27,7 @@
                     </router-link>                        
                   </li>
                   <li class="info-item">
-                    <router-link to=''>                      
+                    <router-link to='/profile/integral'>                      
                         <span><b>{{jifen}}</b>分</span>
                         <span>我的积分</span>
                     </router-link>                    
@@ -37,7 +37,7 @@
           <section class="profile-list">
             <ul>
                 <li>
-                    <router-link to=''>
+                    <router-link to='/order'>
                         <span class="list-icon"></span>
                         <div class="list-text-arrow">
                             <span class="list-text">我的订单</span>

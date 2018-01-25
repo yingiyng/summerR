@@ -8,10 +8,9 @@
 .star .star-item{
     display: inline-block;
     background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
-    margin-right: 20px;
-    background-size: 20px 20px;
+    width: 12px;                                                                                                                                                                                                                                                                                                        
+    height: 12px;
+    background-size: cover;
 }
 .star .star-item.on{
     background-image: url(./star24_on@2x.png);

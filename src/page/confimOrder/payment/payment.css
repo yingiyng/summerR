@@ -1,0 +1,55 @@
+.show-time{
+    text-align: center;
+    padding: 45px 0;
+    background: #fff;
+    font-size: 17px;
+}
+.show-time .time{
+    font-size: 38px;
+    margin-top: 15px;
+    letter-spacing: 4px;
+}
+.payWay{
+    line-height: 50px;
+    font-size: 17px;
+    padding-left: 10px;
+}
+.payWayList{
+    background: #fff;
+}
+.payWayList .payWayItem{
+    padding: 30px 0;
+    border-bottom: 1px solid #efefef;
+    display: flex;
+    align-items: center;
+}
+.payWayList .payWayItem .payItemIcon{
+    padding-left: 20px;
+    font-size: 17px;
+}
+.payItemChoose{
+    flex: 1;
+    text-align: right;
+    padding-right: 20px;
+}
+.payItemChoose:before{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border:1px solid #ddd;
+}
+.payItemChoose.checkPayItem:before{
+    border-color: #3190E8;
+    background: #3190E8;
+}
+.comfimPay{
+    background: #4cd964;
+    width: 90%;
+    margin: 10px auto;
+    padding: 14px 0;
+    text-align: center; 
+    color: #fff;
+    font-size: 17px;
+    border-radius: 4px;
+}
