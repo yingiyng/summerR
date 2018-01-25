@@ -136,7 +136,7 @@ export default {
               this.checkLength++;
           }else{
               item.isActive=false;
-              this.checkLength--;
+              this.checkLength--;  
           }
       },
       saixuanClearAll(){
